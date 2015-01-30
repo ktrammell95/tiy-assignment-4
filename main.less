@@ -2,70 +2,63 @@ body {
   font-family: "Open Sans", sans-serif;
   margin-left: 40px;
   margin-right: 53px;
-}
-
-header {
-  font-family: "Oswald:300", sans-serif; 
-  width: 100%;
-  height: 100%;
-  text-align: center;
-    div .box {
-      background-image: url("/assets/header.jpg");
+  width: 910px;
+    
+  header {
+    background-image: url("/assets/header.jpg");
+    font-family: "Oswald:300", sans-serif;
+    height: 365px;
+      .surf {
+        padding-top: 15px;
+        padding-left: 96px;
+        img {
+        width: 25px;
+        font-family: "Open Sans", sans-serif;
+        text-align: left;
+        font-size: 12px;
+        color: white;
+        vertical-align: middle;
+        padding-right: 5px;
+      }
     }
-    img.sp_logo{ 
-      float: left;
-      width: 30px;
-      padding-left: 96px;
-      padding-right: 7px;
-      padding-top: 9px;
-    }
-    p.surf {
-      text-align: left;
-      padding-top: 15px;
-      font-size: 12px;
-    }
-    div {
-      float: right;
-      padding-right: 96px;
-      text-align: right;
-      font-size: 12px;
-    }
-    div a {
-      list-style: none;
-    }
-    p.header {
-      font-size: 60px;
-      color: white;
-      vertical-align: center;
-    }
-    p.small_header {
-      font-size: 12px;
-      color: black;
-    }
-}
-
-.top {
-    width: 700px;
   }
 
-.social {
-  width: calc(100% - 100px);
-  float:right;
-}
+  .blue {
+    background-color: blue;
+    float: left;
+    width: 675px;
+    text-align: left;
+    font-size: 12px;
 
-footer {
-  background-color: #567;
-    div .footer_links {
-      text-align: right; 
+  }
+
+  .green {
+    background-color: green;
+    padding-right: 96px;
+    padding-top: 7px;
+    text-align: left;
+    font-size: 12px;
+    float: right;
+    width: calc(100% - 700px);
+  }
+
+  footer {
+    background-color: yellow;
+    clear: both;
+    font-size: 12px;
+      img .logo {
+      float: left;
     }
-    tiy_logo {
-      right-padding: 2px;
-    }
-    .footer_links li {
-      list-style: none;
-      text-align: right;
-      display: inline-block;
-      font-size: 12px;
-      font-family: "Open Sans", sans-serif;
-    }
+      .logo div {
+        float:right;
+         ul li {
+            list-style: none;
+            display: inline-block;
+            position: relative;
+            a:link {
+              text-decoration: none;
+            }       
+        }
+      }
+  }
 }
