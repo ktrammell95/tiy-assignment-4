@@ -1,8 +1,9 @@
 body {
-  font-family: "Oswald:300", sans-serif; 
+  font-family: "Oswald", sans-serif; 
   margin-left: 40px;
   margin-right: 53px;
   width: 913px;
+  height: 100%;
     
   header {
     background-image: url("/assets/header.jpg");
@@ -54,22 +55,78 @@ body {
   }
 
 
-  .blue {
-    background-color: blue;
+  .article {
+    border-style: dashed;
     float: left;
-    width: 675px;
+    margin-top: 50px;
+    margin-left: 118px;
+    width: 479px;
     text-align: left;
-    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+      .article_title p{
+        font-size: 42px;
+        margin: 0;
+        margin:0,0,10px,0;
+        padding:0;
+      }
+      .by_line {
+        color: #567;
+        font-size: 8px;
+        img {
+          width: 16px; 
+        }
+        a:link {
+          text-decoration: none;
+        } 
+      }
+      .paragraph1 {
+        font-size: 12px;
+        padding-top: 5px;
+      }
+      .paragraph2 {
+        font-size: 12px;
+        padding-top: 5px;
+      } 
+      .proclaim {
+        font-size: 24px;
+        padding-top: 5px;
+      }  
+      .paragraph3 {
+        font-size: 12px;
+        padding-top: 5px;
+      }    
   }
 
   .green {
     background-color: green;
+    margin-top: 50px;
     padding-right: 96px;
     padding-top: 7px;
     text-align: left;
     font-size: 12px;
     float: right;
-    width: calc(100% - 700px);
+    width: calc(100% - 600px);
+  }
+
+  .lower {
+    clear: both;
+      .posts {
+       font-size: 44px;
+       text-align: center; 
+      }
+      .rollover1 {
+        img {
+        width: 220px;
+        position: relative;
+      }
+        h3 {
+          color: white;
+          position: absolute;
+          top: 1163px;
+          left: 53px;
+          width: 100%
+        }
+      }
   }
 
   footer {
