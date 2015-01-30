@@ -1,27 +1,58 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald:300", sans-serif; 
   margin-left: 40px;
   margin-right: 53px;
-  width: 910px;
+  width: 913px;
     
   header {
     background-image: url("/assets/header.jpg");
-    font-family: "Oswald:300", sans-serif;
+    font-family: "Open Sans", sans-serif;
     height: 365px;
-      .surf {
-        padding-top: 15px;
-        padding-left: 96px;
+    font-size: 11px;
+    color: white;
+      .surf { 
+        border-style: dashed;
+        padding-top: 7px;
+        padding-left: 100px;
+        width: 808px;
         img {
-        width: 25px;
+        width: 30px;
         font-family: "Open Sans", sans-serif;
         text-align: left;
-        font-size: 12px;
-        color: white;
         vertical-align: middle;
-        padding-right: 5px;
+        padding-right: 9px;
+         }
       }
-    }
+        div .about{
+          float: right;
+          width: calc(100% - 700px);
+          padding-right: 96px;
+            ul li {
+              list-style: none;
+              display: inline-block;
+                a:link {
+                text-decoration: none;
+                img {
+                  vertical-align: middle;
+                }
+              }
+           }
+        }
+      div .header {
+        padding-top: 22px;
+        padding-left: 40px;
+        font-size: 69px;
+        margin-bottom: 5px;
+      }
+        .small_header {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 8px;
+        text-align: center;
+        color: black;
+      }
   }
+
 
   .blue {
     background-color: blue;
@@ -29,7 +60,6 @@ body {
     width: 675px;
     text-align: left;
     font-size: 12px;
-
   }
 
   .green {
@@ -48,7 +78,7 @@ body {
     font-size: 12px;
       img .logo {
       float: left;
-    }
+      }
       .logo div {
         float:right;
          ul li {
@@ -57,7 +87,7 @@ body {
             position: relative;
             a:link {
               text-decoration: none;
-            }       
+            }
         }
       }
   }
