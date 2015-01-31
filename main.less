@@ -1,21 +1,23 @@
 body {
-  font-family: "Oswald", sans-serif; 
+  font-family: "Open Sans", sans-serif; 
   margin-left: 40px;
   margin-right: 53px;
   width: 913px;
   height: 100%;
     
   header {
+    display: block;
     background-image: url("/assets/header.jpg");
     font-family: "Open Sans", sans-serif;
     height: 365px;
-    font-size: 11px;
-    color: white;
+    // font-size: 11px;
+    color: #083451;
       .surf { 
         border-style: dashed;
         padding-top: 7px;
         padding-left: 100px;
-        width: 808px;
+        width: 50%;
+        font-size: 11px;
         img {
         width: 30px;
         font-family: "Open Sans", sans-serif;
@@ -24,56 +26,75 @@ body {
         padding-right: 9px;
          }
       }
-        div .about{
-          float: right;
-          width: calc(100% - 700px);
-          padding-right: 96px;
-            ul li {
-              list-style: none;
-              display: inline-block;
-                a:link {
-                text-decoration: none;
-                img {
-                  vertical-align: middle;
-                }
+      .about {
+        border-style: dashed, red;
+        float: right;
+        width: 25%;
+        padding-right: 37px;
+        font-family: "Oswald", sans-serif;
+        // color: #083451;
+        // font-weight: bold;
+        margin-top: -49px;
+        font-size: 13px;
+        // color: #083451;
+          ul li {
+            list-style: none;
+            display: inline-block;
+            padding-left: 5px;
+            padding-top: 5px;
+            margin:0;
+            // color: #083451;
+              a:link {
+              text-decoration: none;
+              color: #083451;
               }
-           }
-        }
+              a:visited {
+                color: #083451;
+              }
+              img {
+                vertical-align: middle;
+                width: 13px;
+              }
+         }
+      }
       div .header {
-        padding-top: 22px;
-        padding-left: 40px;
+        padding-top: 23px;
+        padding-left: 136px;
         font-size: 69px;
-        margin-bottom: 5px;
+        margin-bottom: -11px;
+        color: white;
       }
         .small_header {
         margin-top: 0;
         padding-top: 0;
-        font-size: 8px;
+        padding-right: 15px;
+        font-size: 11px;
         text-align: center;
         color: black;
       }
   }
 
-
-  .article {
+  .left {
     border-style: dashed;
+    padding-top: 40px;
     float: left;
-    margin-top: 50px;
-    margin-left: 118px;
-    width: 479px;
+    margin-left: 115px;
+    width: 434px;
     text-align: left;
     font-family: "Oswald", sans-serif;
-      .article_title p{
+      .article_title p {
         font-size: 42px;
-        margin: 0;
-        margin:0,0,10px,0;
+        margin:0;
         padding:0;
+        color: #083452;
+        line-height: 125%;
+        word-spacing: -1px;
       }
       .by_line {
         color: #567;
-        font-size: 8px;
+        font-size: 12px;
         img {
-          width: 16px; 
+          width: 16px;
         }
         a:link {
           text-decoration: none;
@@ -81,7 +102,7 @@ body {
       }
       .paragraph1 {
         font-size: 12px;
-        padding-top: 5px;
+        padding-top: 22px;
       }
       .paragraph2 {
         font-size: 12px;
@@ -90,85 +111,100 @@ body {
       .proclaim {
         font-size: 24px;
         padding-top: 5px;
+        color: #106db3;
+        padding-left: 10px;
+        border-left: solid;
       }  
       .paragraph3 {
         font-size: 12px;
         padding-top: 5px;
-      }    
+      }  
+      .buttons {
+        .button1, {
+          display: inline-block;
+          background-color: #a3b3bf;
+          font-size: 13px;
+          color: #ffffff;
+          float: left;
+          margin-right: 10px;
+          img {
+              background-color: #5e686f;
+              width: 18px;
+              padding: 5px;
+              vertical-align: middle;
+          }
+        }
+        .button2 {
+          display: inline-block;
+          background-color: #a3b3bf;
+          font-size: 13px;
+          float: left;
+          margin-right: 10px;
+          img {
+            background-color: #5e686f;
+            width: 18px;
+            padding: 7px;
+            vertical-align: middle;
+          }
+        }
+        .button3 {
+          display: inline-block;
+          background-color: #a3b3bf;
+          font-size: 13px;
+          float: left;
+          img {
+            background-color: #083452;
+            width: 19px;
+            padding: 5px;
+            vertical-align: middle;
+          }
+        }
+          
+          a:link {
+            text-decoration: none;
+            margin: 8px;
+            color: #ffffff;
+              }
+      }   
   }
-
-  .green {
+  .right {
     background-color: green;
-    margin-top: 50px;
-    padding-right: 96px;
-    padding-top: 7px;
+    // margin-top: 50px;
+    // padding-right: 96px;
+    // padding-top: 7px;
     text-align: left;
     font-size: 12px;
     float: right;
-    width: calc(100% - 600px);
+    width: cal(100% - 20%);
+    .social {
+      display: inline-block;
+        img {
+          float: right;
+        }
+    }
   }
 
-  .lower {
+.lower {
     clear: both;
       .posts {
        font-size: 44px;
        text-align: center; 
       }
-      .rollover1 {
+      .rollover1, .rollover2, .rollover3, .rollover4 {
         position: relative;
+        display: inline-block;
         img {
         width: 220px;
       }
         h3 {
           color: black;
           position: absolute;
-          top: 168px;
+          top: 147px;
           left: 13px;
           width: 100%
         }
       }
-      .rollover2 {
-        position: relative;
-        img {
-        width: 220px;
-      }
-        h3 {
-          color: black;
-          position: absolute;
-          top: 168px;
-          left: 13px;
-          width: 100%
-        }
-      }
-      .rollover3 {
-        position: relative;
-          img {
-          width: 220px;
-        }
-          h3 {
-            color: black;
-            position: absolute;
-            top: 168px;
-          left: 13px;
-            width: 100%
-          }
-      } 
-      .rollover4 {
-        position: relative;
-          img {
-          width: 220px;
-        }
-          h3 {
-            color: black;
-            position: absolute;
-            top: 168px;
-            left: 13px;
-            width: 100%
-          }
-        }
-
   }
-
   footer {
     background-color: yellow;
     clear: both;
