@@ -1,5 +1,12 @@
+@paragraph-font: #5e686f;
+@title-font: #083452;
+@highlight-font: #106db3;
+@link-font: #083451;
+@body-font: "Open Sans", sans-serif;
+@header-font: "Oswald", sans-serif;
+
 body {
-  font-family: "Open Sans", sans-serif; 
+  font-family: @body-font; 
   margin-left: 40px;
   margin-right: 53px;
   width: 913px;
@@ -8,52 +15,45 @@ body {
   header {
     display: inline-block;
     background-image: url("/assets/header.jpg");
-    font-family: "Open Sans", sans-serif;
+    font-family: @body-font;
     height: 365px;
     width: 100%;
-    color: #083451;
+    color: @link-font;
       .surf { 
-        // border-style: dashed;
         padding-top: 8px;
         padding-left: 100px;
         width: 50%;
         font-size: 11px;
         img {
         width: 30px;
-        font-family: "Open Sans", sans-serif;
+        font-family: @body-font;
         text-align: left;
         vertical-align: middle;
         padding-right: 9px;
          }
       }
       .about {
-        // border-style: dashed;
         float: right;
         width: 25%;
         padding-right: 36px;
         padding-top: 4px;
-        font-family: "Oswald", sans-serif;
-        // color: #083451;
-        // font-weight: bold;
+        font-family: @header-font;
         margin-top: -49px;
         font-size: 13px;
-        // color: #083451;
           ul li {
             list-style: none;
             display: inline-block;
             padding-left: 5px;
             padding-top: 5px;
             margin:0;
-            // color: #083451;
               a:link {
               text-decoration: none;
-              color: #083451;
+              color: @link-font;
               }
               a:visited {
-                color: #083451;
+                color: @link-font;
               }
               img {
-                // vertical-align: middle;
                 width: 11px;
               }
          }
@@ -76,18 +76,17 @@ body {
   }
 
   .left {
-    // border-style: dashed;
     padding-top: 45px;
     float: left;
     margin-left: 115px;
     width: 47%;
     text-align: left;
-    font-family: "Oswald", sans-serif;
+    font-family: @header-font;
       .article_title p {
         font-size: 42px;
         margin:0;
         padding:0;
-        color: #083452;
+        color: @title-font;
         line-height: 118%;
         word-spacing: 4px;
       }
@@ -96,24 +95,19 @@ body {
         font-size: 9px;
         padding-top: 4px;
         padding-left: 2px;
-        font-family: "Open Sans", sans-serif;
-        color: #106db3;
+        font-family: @body-font;
+        color: @highlight-font;
         img {
           width: 16px;
           vertical-align: middle;
           padding-right: 4px;
         }
         a:link {
-          // text-decoration: none;
           color: #bac6cf;
         }
         a:visited {
           color: #bac6cf; 
         }
-        // p { 
-        //   padding-top: 5px;
-        //   padding-left: 5px;
-        // }
           span {
           color: #bac6cf;
           padding-left: 7px;
@@ -122,8 +116,8 @@ body {
       .paragraph1 {
         font-size: 10px;
         padding-top: 24px;
-        font-family: "Open Sans", sans-serif;
-        color: #5e686f;
+        font-family: @body-font;
+        color: @paragraph-font;
         font-weight: 600;
         line-height: 18px;
         word-spacing: 1px;
@@ -131,8 +125,8 @@ body {
       .paragraph2 {
         font-size: 10px;
         padding-top: 19px;
-        font-family: "Open Sans", sans-serif;
-        color: #5e686f;
+        font-family: @body-font;
+        color: @paragraph-font;
         font-weight: 600;
         line-height: 18px;
         word-spacing: 1px;
@@ -142,9 +136,9 @@ body {
       } 
       .proclaim {
         font-size: 20px;
-        font-family: "Open Sans", sans-serif;
-        padding-top: 22px;
-        color: #106db3;
+        font-family: @body-font;
+        padding-top: 24px;
+        color: @highlight-font;
         padding-left: 14px;
         border-left: solid;
         word-spacing: -5px;
@@ -152,26 +146,26 @@ body {
       .paragraph3 {
         font-size: 10px;
         padding-top: 24px;
-        font-family: "Open Sans", sans-serif;
-        color: #5e686f;
+        font-family: @body-font;
+        color: @paragraph-font;
         font-weight: 600;
         line-height: 18px;
         word-spacing: 1px;
         p {
           font-size: 10px;
           padding-top: 10px;
-          font-family: "Open Sans", sans-serif;
-          color: #5e686f;
+          font-family: @body-font;
+          color: @paragraph-font;
           font-weight: 600;
           line-height: 18px;
           word-spacing: 1px; 
         }
         a:link{
           // text-decoration: none;
-          color: #5e686f;
+          color: @paragraph-font;
         }
         a:hover {
-            color: #106db3;
+            color: @highlight-font;
             // text-decoration: underline;
         }
       }  
@@ -182,13 +176,12 @@ body {
           display: inline-block;
           background-color: #a3b3bf;
           font-size: 11px;
-          // color: #ffffff;
           float: left;
           margin-right: 11px;
           padding-left: 1px;
           padding-right: 3px;
           img {
-              background-color: #5e686f;
+              background-color: @paragraph-font;
               width: 12px;
               padding: 5px;
               vertical-align: middle;
@@ -198,13 +191,12 @@ body {
           display: inline-block;
           background-color: #a3b3bf;
           font-size: 11px;
-          // color: #ffffff;
           float: left;
           margin-right: 10px;
           padding-left: 1px;
-          
+
           img {
-              background-color: #5e686f;
+              background-color: @paragraph-font;
               width: 12px;
               padding: 5px;
               vertical-align: middle;
@@ -216,7 +208,7 @@ body {
           font-size: 13px;
           float: left;
           img {
-            background-color: #083452;
+            background-color: @title-font;
             width: 19px;
             padding: 5px;
             vertical-align: middle;
@@ -234,8 +226,7 @@ body {
   }
 
 .right {
-    // border-style: dashed; 
-    font-family: "Open Sans", sans-serif;
+    font-family: @body-font;
     text-align: left;
     font-size: 12px;
     float: right;
@@ -243,7 +234,6 @@ body {
     margin-right: 54px;
   .social {
     display: inline-block;
-    // border-style: dashed;
     img {
       float: right;
       height: 58px;
@@ -252,7 +242,6 @@ body {
     }
   }  
   .anne {
-    // border-style: dashed;
     font-size: 11px;
     color: #5a8ec2;
     text-align: center;
@@ -260,19 +249,17 @@ body {
     padding-right: 12px;
   }
   .social_media {
-    // border-style: dashed;
     display: inline-block;
     width: 98%;
     text-align: center;
     padding-left: 6px;
     a:link {
       text-decoration: none;
-      font-family: "Open Sans", sans-serif;
+      font-family: @body-font;
       color: #a3b3bf;
     }
   }
   .adv {
-      // border-style: dashed;
       text-align: right;
       img {
         height: 210px;
@@ -281,10 +268,9 @@ body {
       }
   }
   .about_ad {
-    // border-style: dashed;
     text-align: right;
     a {
-      font-family: "Open Sans", sans-serif;
+      font-family: @body-font;
       color: #a8b7c3;
       margin-right: 61px;
       font-size: 9px;
@@ -292,10 +278,10 @@ body {
   }
   .side {
       margin-left: 48px;
-      font-family: "Oswald", sans-serif;
+      font-family:@header-font;
       h3 {
         font-size: 12px;
-        color: #106db3;
+        color: @highlight-font;
         padding-top: 27px;
         padding-bottom: 0;
         margin: 0;
@@ -313,8 +299,8 @@ body {
       .posts {
        font-size: 44px;
        text-align: center;
-       font-family: "Oswald", sans-serif; 
-       color: #083452;
+       font-family: @header-font; 
+       color: @title-font;
       }
       .rollover1, .rollover2, .rollover3, .rollover4 {
         position: relative;
@@ -332,7 +318,7 @@ body {
       }
   }
   footer {
-    background-color: #083452;
+    background-color: @title-font;
     clear: both;
     font-size: 12px;
     height: 80px;
